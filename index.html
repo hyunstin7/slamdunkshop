@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="./css/reset_2.css">
     <link rel="stylesheet" href="./css/main-style.css">
     <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/main.js"></script>
     <title>Slamdunk Shop</title>
 </head>
 <body>
     <div id="wrap">
+    <div class="loading-page">
+        <div class="bg-wrap">
+            <h1 class="loading">0%</h1>
+            <div class="dark-box"></div>
+        </div>
+    </div>
     <header>
         <div class="logo"><img src="./img/슬랩덩크 로고.svg" alt=""></div>
         <ul class="m-nav-list">
@@ -82,22 +90,22 @@
                         <div class="t-shirt-wrap">
                             <div class="t-shirt-visual">
                                 <div class="tb">
-                                    <img class="tb5" src="./img/Tb5.png" alt="">
-                                    <img class="tb4" src="./img/Tb4.png" alt="">
-                                    <img class="tb3" src="./img/Tb3.png" alt="">
-                                    <img class="tb2" src="./img/Tb2.png" alt="">
-                                    <img class="tb1" src="./img/Tb1.png" alt="">
+                                    <img class="tb5" src="./img/TB5.png" alt="">
+                                    <img class="tb4" src="./img/TB4.png" alt="">
+                                    <img class="tb3" src="./img/TB3.png" alt="">
+                                    <img class="tb2" src="./img/TB2.png" alt="">
+                                    <img class="tb1" src="./img/TB1.png" alt="">
                                 </div>
                                 <div class="ta">
-                                    <img class="tbb5 tbb" src="./img/Tb5.png" alt="" style="--num:5;">
+                                    <img class="tbb5 tbb" src="./img/TB5.png" alt="" style="--num:5;">
                                     <img class="ta5 taa" src="./img/TA5.png" alt="" style="--num:5;">
-                                    <img class="tbb4 tbb" src="./img/Tb4.png" alt="" style="--num:4;">
+                                    <img class="tbb4 tbb" src="./img/TB4.png" alt="" style="--num:4;">
                                     <img class="ta4 taa" src="./img/TA4.png" alt="" style="--num:4;">
-                                    <img class="tbb3 tbb" src="./img/Tb3.png" alt="" style="--num:3;">
+                                    <img class="tbb3 tbb" src="./img/TB3.png" alt="" style="--num:3;">
                                     <img class="ta3 taa" src="./img/TA3.png" alt="" style="--num:3;">
-                                    <img class="tbb2 tbb" src="./img/Tb2.png" alt="" style="--num:2;">
+                                    <img class="tbb2 tbb" src="./img/TB2.png" alt="" style="--num:2;">
                                     <img class="ta2 taa" src="./img/TA2.png" alt="" style="--num:2;">
-                                    <img class="tbb1 tbb" src="./img/Tb1.png" alt="" style="--num:1;">
+                                    <img class="tbb1 tbb" src="./img/TB1.png" alt="" style="--num:1;">
                                     <img class="ta1 taa" src="./img/TA1.png" alt="" style="--num:1;">
                                     
 
@@ -256,589 +264,33 @@
             </div>
             
         </section>
-        <footer>
-            <div class="footer-wrap">
-                <div class="footer-content">
-                    <div class="join">
-                        <div class="membership-content">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"><path class="membership-path" d="M0,421.94c29.08,19.5,54.3,26.83,72.23,29.87,24.44,4.14,39.82,1.06,71.24,7.66a253,253,0,0,1,48.25,15.32c0,.84-.17,7.66,5,11.74a14.53,14.53,0,0,0,16.35.51c3.18-2.32,4.19-5.66,5.1-8.85,1.44-5,1.09-8.59.85-15.15-.16-4.47.42-9.55-.17-16.51a13.46,13.46,0,0,0-1.53-6c-1.79-3.17-4.75-4.74-7.49-5.95a65.07,65.07,0,0,0-18.55-4.94c-8.76-1-14.16-.28-21.45.68-4.67.62-7.72,1.34-9.7,3.92-1.55,2-2.48,5.2-1.36,7.66,1.67,3.68,7.33,4.35,11.23,4.76,27.76,2.93,41.19,2.56,41.19,2.56,16.44-.47,21.09-1.11,25.53-4.77a28.08,28.08,0,0,0,7.49-10.38,26.13,26.13,0,0,0,1.71-11.92,24.63,24.63,0,0,0-5.62-14c-1.44-1.65-4.37-4.51-13.62-7.66-7.14-2.43-14.07-3.68-23.49-4.42-8.54-.67-14.93-.56-27.74-.17-11.83.36-16.8,1-20.94,4.76-1.35,1.24-4.25,3.53-4.76,7.32-.56,4.16,2,7.44,2.72,8.34,3.53,4.51,9,5.69,12.6,6.3,12.35,2.14,22.69,2.2,42.21,1.53,7.28-.24,10.37-.38,14.81-1.36,5.39-1.18,12.28-2.77,18.89-8.17,2.56-2.08,9-7.48,10.89-16.34.56-2.58,1.68-7.75-1.19-12.42A13.92,13.92,0,0,0,247,382a59.81,59.81,0,0,0-16.34-9,203.89,203.89,0,0,0-31.15-7.15s-23.67-3.7-39.32-.85a18.7,18.7,0,0,0-7.66,3.06,13.83,13.83,0,0,0-5.11,5.62c-.52,1.16-1.63,3.61-.85,6.13.66,2.1,2.42,3.59,5.11,4.93,11.17,5.61,27.06,6.3,27.06,6.3,6.63,0,14.1.78,25.19.85a139,139,0,0,0,27.58-2.21c4.42-.83,7.6-1.68,10.89-3.91,5.55-3.75,7.95-9,9.36-12.26,2.89-6.57,3.18-13.29,3.75-26.72.1-2.45.15-4.46.17-5.79l8-10c17.75-22.22,19.87-24.46,23.15-29.28,7.63-11.23,11-21,14.81-32A174.33,174.33,0,0,0,311.21,219c.34-12.46.8-29.46-6.38-49-10.78-29.38-31.89-45.78-37.53-50-36.21-27.37-93.87-34.38-136.09-6.38C100.26,134,89.39,165.57,86,175.81a132.33,132.33,0,0,0-3.32,66.64c8.8,42.72,39.44,71.76,43.92,75.06a22.33,22.33,0,0,1,5.1,5.11,24.5,24.5,0,0,1,3.83,8.93c1.77,7.14,1.15,10,2.3,19.41.81,6.62,1.21,9.92,2.55,12.25.39.68,5.42,9.07,15.07,9.45a17.75,17.75,0,0,0,12.25-4.34c5.45-5,5.71-12.66,5.88-17.11,1.59-43.86,2.23-35.59,1.78-43.66-1-17.75-2.41-28-4.85-45.44-1.29-9.25-3.17-21.38-10.72-32.68-2.89-4.33-6.5-8.35-12-10.22-1.92-.65-7.23-2.45-12.51.26-6.77,3.47-7.8,11.4-7.92,12.51a16.7,16.7,0,0,0,2.56,11c.95,1.37,4.73,6.22,21.7,7.4,6.58.46,17.15-1.3,38-4.85,7.86-1.33,16-2.82,20.68-8.94a27.87,27.87,0,0,0,3.07-5.36c1.47-3.38,3.66-8.41,2-13.78-1.73-5.76-6.82-8.59-7.92-9.2a18.56,18.56,0,0,0-19.66,1c-1,.75-6.73,4.94-6.89,12-.15,6.74,6.08,11.39,11,15.06,14.35,10.74,28.93,11.27,56.17,12.25a18.78,18.78,0,0,0,10-2c6.52-3.55,8.47-10.44,8.68-11.23.33-1.24,2.13-8-1.79-13.79-4.36-6.39-13.33-7.88-19.4-6.13-9,2.61-13.34,12.85-16.34,21.45-11.94,34.14-11.87,67.27-11.75,79.66.28,28.56.2,46,2.81,68.68,0,0,4.19,36.42,5.36,61.72.07,1.54.07,2.9.26,5.88s.19,5.83.32,8.74a7.59,7.59,0,0,1-.58,4.15,6.58,6.58,0,0,1-2.49,2.49c-2.72,1.65-10.94,4.64-21,1.28-5.46-1.83-6.73-3.95-7.15-4.79-.17-.34-1.56-3.25-.19-5.62.93-1.62,2.65-2.11,5-2.74,3.9-1.06,7.37-.71,11.43-.26,1.49.17,2.57.34,4,.58,4,.65,7.31,1.38,9.55,1.93"/></svg>                            
-                        <h2>Join our <br>membership.</h2>
-                        </div>                         
+            <footer>
+                <div class="footer-wrap">
+                    <div class="footer-content">
+                        <div class="join">
+                            <div class="membership-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"><path class="membership-path" d="M0,421.94c29.08,19.5,54.3,26.83,72.23,29.87,24.44,4.14,39.82,1.06,71.24,7.66a253,253,0,0,1,48.25,15.32c0,.84-.17,7.66,5,11.74a14.53,14.53,0,0,0,16.35.51c3.18-2.32,4.19-5.66,5.1-8.85,1.44-5,1.09-8.59.85-15.15-.16-4.47.42-9.55-.17-16.51a13.46,13.46,0,0,0-1.53-6c-1.79-3.17-4.75-4.74-7.49-5.95a65.07,65.07,0,0,0-18.55-4.94c-8.76-1-14.16-.28-21.45.68-4.67.62-7.72,1.34-9.7,3.92-1.55,2-2.48,5.2-1.36,7.66,1.67,3.68,7.33,4.35,11.23,4.76,27.76,2.93,41.19,2.56,41.19,2.56,16.44-.47,21.09-1.11,25.53-4.77a28.08,28.08,0,0,0,7.49-10.38,26.13,26.13,0,0,0,1.71-11.92,24.63,24.63,0,0,0-5.62-14c-1.44-1.65-4.37-4.51-13.62-7.66-7.14-2.43-14.07-3.68-23.49-4.42-8.54-.67-14.93-.56-27.74-.17-11.83.36-16.8,1-20.94,4.76-1.35,1.24-4.25,3.53-4.76,7.32-.56,4.16,2,7.44,2.72,8.34,3.53,4.51,9,5.69,12.6,6.3,12.35,2.14,22.69,2.2,42.21,1.53,7.28-.24,10.37-.38,14.81-1.36,5.39-1.18,12.28-2.77,18.89-8.17,2.56-2.08,9-7.48,10.89-16.34.56-2.58,1.68-7.75-1.19-12.42A13.92,13.92,0,0,0,247,382a59.81,59.81,0,0,0-16.34-9,203.89,203.89,0,0,0-31.15-7.15s-23.67-3.7-39.32-.85a18.7,18.7,0,0,0-7.66,3.06,13.83,13.83,0,0,0-5.11,5.62c-.52,1.16-1.63,3.61-.85,6.13.66,2.1,2.42,3.59,5.11,4.93,11.17,5.61,27.06,6.3,27.06,6.3,6.63,0,14.1.78,25.19.85a139,139,0,0,0,27.58-2.21c4.42-.83,7.6-1.68,10.89-3.91,5.55-3.75,7.95-9,9.36-12.26,2.89-6.57,3.18-13.29,3.75-26.72.1-2.45.15-4.46.17-5.79l8-10c17.75-22.22,19.87-24.46,23.15-29.28,7.63-11.23,11-21,14.81-32A174.33,174.33,0,0,0,311.21,219c.34-12.46.8-29.46-6.38-49-10.78-29.38-31.89-45.78-37.53-50-36.21-27.37-93.87-34.38-136.09-6.38C100.26,134,89.39,165.57,86,175.81a132.33,132.33,0,0,0-3.32,66.64c8.8,42.72,39.44,71.76,43.92,75.06a22.33,22.33,0,0,1,5.1,5.11,24.5,24.5,0,0,1,3.83,8.93c1.77,7.14,1.15,10,2.3,19.41.81,6.62,1.21,9.92,2.55,12.25.39.68,5.42,9.07,15.07,9.45a17.75,17.75,0,0,0,12.25-4.34c5.45-5,5.71-12.66,5.88-17.11,1.59-43.86,2.23-35.59,1.78-43.66-1-17.75-2.41-28-4.85-45.44-1.29-9.25-3.17-21.38-10.72-32.68-2.89-4.33-6.5-8.35-12-10.22-1.92-.65-7.23-2.45-12.51.26-6.77,3.47-7.8,11.4-7.92,12.51a16.7,16.7,0,0,0,2.56,11c.95,1.37,4.73,6.22,21.7,7.4,6.58.46,17.15-1.3,38-4.85,7.86-1.33,16-2.82,20.68-8.94a27.87,27.87,0,0,0,3.07-5.36c1.47-3.38,3.66-8.41,2-13.78-1.73-5.76-6.82-8.59-7.92-9.2a18.56,18.56,0,0,0-19.66,1c-1,.75-6.73,4.94-6.89,12-.15,6.74,6.08,11.39,11,15.06,14.35,10.74,28.93,11.27,56.17,12.25a18.78,18.78,0,0,0,10-2c6.52-3.55,8.47-10.44,8.68-11.23.33-1.24,2.13-8-1.79-13.79-4.36-6.39-13.33-7.88-19.4-6.13-9,2.61-13.34,12.85-16.34,21.45-11.94,34.14-11.87,67.27-11.75,79.66.28,28.56.2,46,2.81,68.68,0,0,4.19,36.42,5.36,61.72.07,1.54.07,2.9.26,5.88s.19,5.83.32,8.74a7.59,7.59,0,0,1-.58,4.15,6.58,6.58,0,0,1-2.49,2.49c-2.72,1.65-10.94,4.64-21,1.28-5.46-1.83-6.73-3.95-7.15-4.79-.17-.34-1.56-3.25-.19-5.62.93-1.62,2.65-2.11,5-2.74,3.9-1.06,7.37-.71,11.43-.26,1.49.17,2.57.34,4,.58,4,.65,7.31,1.38,9.55,1.93"/></svg>                            
+                            <h2>Join our <br>membership.</h2>
+                            </div>                         
+                        </div>
+                        <div class="email"><p>Contact e-mail</p><div class="contact-line"></div><p>pigethang7@naver.com</p></div>
+                        <div class="callnumber"><p>Contact me</p><div class="contact-line"></div><p>+82 010.2448.6624</p></div>
                     </div>
-                    <div class="email"><p>Contact e-mail</p><div class="contact-line"></div><p>pigethang7@naver.com</p></div>
-                    <div class="callnumber"><p>Contact me</p><div class="contact-line"></div><p>+82 010.2448.6624</p></div>
-                </div>
-                <div class="footer-login">
-                    <div class="login-wrap">
-                        <div class="name"><h2>Login</h2></div>
-                        <p>ID</p>
-                        <input id="id" type="id">
-                        <p>Password</p>
-                        <input id="password" type="password">
-                        <a class="forget" href="">Don't you remember the password?</a>
-                        <button class="login-btn">Login</button>
-                        
+                    <div class="footer-login">
+                        <div class="login-wrap">
+                            <div class="name"><h2>Login</h2></div>
+                            <p>ID</p>
+                            <input id="id" type="id">
+                            <p>Password</p>
+                            <input id="password" type="password">
+                            <a class="forget" href="">Don't you remember the password?</a>
+                            <button class="login-btn">Login</button>
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        
-        <script src="./js/jquery-3.6.3.min.js"></script>
-        <script>
-            $(window).resize(function(){
-            // $('.figure-content svg').css("margin-left",`-${(1920-$(window).innerWidth())/9}px`)
-            $('.h-line1').css("top",`${$('.shoes-box3').offset().top-$('.shoes-visual1').offset().top}px`)
-            $('.star1').css("top",`${$('.shoes-box3').offset().top-$('.shoes-visual1').offset().top}px`)
-            $('.h-line2').css("top",`${$('.shoes-box5').offset().top-$('.shoes-visual1').offset().top}px`)
-            $('.star2').css("top",`${$('.shoes-box5').offset().top-$('.shoes-visual1').offset().top}px`)
-            })
-            // $('.figure-content svg').css("margin-left",`-${(1920-$(window).innerWidth())/9}px`)
-            $('.h-line1').css("top",`${$('.shoes-box3').offset().top-$('.shoes-visual1').offset().top}px`)
-            $('.star1').css("top",`${$('.shoes-box3').offset().top-$('.shoes-visual1').offset().top}px`)
-            $('.h-line2').css("top",`${$('.shoes-box5').offset().top-$('.shoes-visual1').offset().top}px`)
-            $('.star2').css("top",`${$('.shoes-box5').offset().top-$('.shoes-visual1').offset().top}px`)
-
-            let boolean = true;
-            $('.m-menu').click(function(){
-                if(boolean){
-                    $('body').addClass('stopscroll').on('scroll touchmove mousewheel', function(e){
-                    e.preventDefault();
-                    e.stopPropagation();
-                    return false
-                    });
-                    
-                    
-                    $('.line-wrap span:first-child').css({"top" : "50%","transform" : "translateY(-50%)"});
-                    $('.line-wrap span:nth-of-type(2)').css("opacity",0);
-                    $('.line-wrap span:last-child').css({"top" : "50%","transform" : "translateY(-50%)"});
-                    $('.m-nav-list').css("left","0")
-                    setTimeout(()=>{
-                        $('.line-wrap span:first-child').css({"top" : "50%","transform" : "translateY(-50%) rotate(45deg)"});
-                        $('.line-wrap span:last-child').css({"top" : "50%","transform" : "translateY(-50%) rotate(-45deg)"});
-                    },250)
-                    boolean = false;
-                }else{
-                    $('body').removeClass('stopscroll').off('scroll touchmove mousewheel');
-                    
-                    
-                    $('.line-wrap span:first-child').css({"top" : "50%","transform" : "translateY(-50%)"});
-                    $('.line-wrap span:last-child').css({"top" : "50%","transform" : "translateY(-50%)"});
-                    $('.m-nav-list').css("left","100%")
-                    setTimeout(()=>{
-                        $('.line-wrap span:nth-of-type(2)').css("opacity",1);
-                    $('.line-wrap span:first-child').css({"top" : "0","transform" : ""});
-                    $('.line-wrap span:last-child').css({"top" : "100%","transform" : "translateY(-100%)"});
-                    },250)
-                    boolean = true;
-                }
-            })
-
-            // --------------scroll btn-----------------//
-
-            let scrollbtn = [
-                // [버튼요소,탑위치로 이동될 해당요소]//
-                ['.home','body'],
-                ['.signature','#figure'],
-                ['.contact','footer'],
-                ['.login','footer']
-            ]
-
-            scrollbtn.forEach((a)=>{
-                $(a[0]).click(function(){
-                let offset = $(a[1]).offset().top;
-                console.log(offset)
-	            $('html, body').animate({scrollTop:offset},0);
-	            return false;
-            });
-            })
-
-            
-
-     
-            // -----------------Tag img append-----------------------//
-            for(let i = 0; i<235; i++)
-            {
-            let imgBox = `<img class="main main${i}" src="./img/movie/${i}.png" alt="">`
-            $('.visual-box').append(imgBox)
-            }
-            let lastScroll = 0;
-
-            // -----------------basket-mordal 새로고침 이벤트 방지-----------------//
-            let scrollY = $(window).scrollTop();
-            if(scrollY > 500){
-                $('.basket-mordal').css("display","none");
-            } else {
-                $('.basket-mordal').css("display","flex");
-            }
-
-            //----------------------Scrolling---------------------//
-            $(window).scroll(function(){
-                let scrollY = $(window).scrollTop();
-                let height = window.innerHeight;
-                let delaytime = 0;
-
-    
-                
-            // console.log(scrollY);
-            
-            
-            //----------------basket-mordal------------------//
-
-            if(scrollY > 50){
-                $('.basket-mordal').css("opacity",0);
-            }
-            if(scrollY <= 50) {
-                $('.basket-mordal').css("opacity",1);
-            }
-
-            // ------------ header-fixed ------------//
-            if(scrollY > lastScroll) {
-                //down
-            $('header').addClass('fixed');
-            obf1();
-            } else {
-                // up
-            $('header').removeClass('fixed');
-            obf2()
-            }
-            lastScroll = scrollY;
-
-    
-            
-
-            //----------------Main visual //
-
-            if(scrollY > 500){
-                $('.basket-mordal').css("display","none");
-            } else {
-                $('.basket-mordal').css("display","flex");
-            }
-
-            let [imgNum,a,b,c,d,e,scaleA,scaleB,scaleC,scaleD,scaleE] = [];
-                imgNum = parseInt(scrollY / 30);
-                imgNum > 236 ? imgNum = 235 : imgNum = imgNum;
-
-            
-
-            $('.main').css("visibility","hidden");
-            $('.main'+imgNum).css("visibility","visible");
-                function tshirtAnimateM(){
-                    let twrapRatio = (scrollY + $(window).innerHeight()*0.35 - $('.t-shirt-wrap').offset().top) / $('.t-shirt-wrap').innerHeight();
-                    console.log(twrapRatio)
-
-                    if(twrapRatio >= 0.35 && twrapRatio <= 0.85){
-                        $('.ta').css("transform",`perspective(1000px) rotateY(${(twrapRatio - 0.35)*720}deg)`)
-                    }
-                }
-                
-
-                
-
-            // -------Goods T-shirt scroll animation-------//
-                function tshirtAnimate(){
-                    if(scrollY < 8300){
-                    a = 0;
-                    $('.tb').css("opacity",0)
-                }
-                if(scrollY > 8300){
-                    let val = scrollY - 8300;
-                    a = val
-                    scaleA = 1
-                    scaleB = 1-0.05*(val/150)
-                    $('.tb').css("opacity",1)
-                }
-                if(scrollY > 8450){
-                    let val = scrollY - 8450;
-                    a = 150
-                    b = val
-                    scaleB = 0.95
-                    scaleC = 1-0.1*(val/150)
-                }
-                if(scrollY > 8590){
-                    let val = scrollY - 8590;
-                    b = 140
-                    c = val
-                    scaleC = 0.9
-                    scaleD = 1-0.15*(val/140)
-                }
-                if(scrollY > 8720){
-                    let val = scrollY - 8720;
-                    c = 130
-                    d = val
-                    scaleD = 0.85
-                    scaleE = 1-0.2*(val/130)
-
-                }
-                if(scrollY > 8840){
-                    let val = scrollY - 8840;
-                    d = 120
-                    e = val
-                    scaleE = 0.8
-                }
-                if(scrollY > 8950){
-                    e = 110
-                }
-                // console.log(x);
-                let taImage = [".ta1",".ta2",".ta3",".ta4",".ta5"]
-                let tbImage = [".tb1",".tb2",".tb3",".tb4",".tb5"]
-                let gap = [a,b,c,d,e]
-                let scalearr = [scaleA,scaleB,scaleC,scaleD,scaleE]
-                let gapChange = 0;
-
-                for(let i = 0; i<5; i++){
-                    let taElm = taImage.join();
-                    let tbElm = tbImage.join();
-                    gapChange = gapChange + gap[i]
-                    $(taElm).stop();
-                    $(taElm).css("transform",`translateX(-${gapChange}px) scale(${scalearr[i]})`)
-                    $(tbElm).stop();
-                    $(tbElm).css("transform",`translateX(${gapChange}px) scale(${scalearr[i]})`)
-                    taImage.splice(0,1);
-                    tbImage.splice(0,1);
-                }
-                }
-            
-                    // ----------------T-shirt demon------------------//
-                    if(scrollY <= 9000){
-                        $('.t-demon1').css("transform", `translateY(0px)`)
-                                        .css("opacity",0);
-                        $('.t-demon2').css("transform", `translateY(0px)`)
-                                        .css("opacity",0);
-                    }
-                    if(scrollY > 9000 && scrollY <9200){
-                        let opa= (scrollY - 9000) / 200
-                        let trans = (9200 - scrollY ) / 4;
-
-                        $('.t-demon1').css("transform", `translateY(${trans}px)`)
-                                        .css("opacity",opa);
-                    }
-                    if(scrollY > 9200 && scrollY <9400){
-                        let opa= (scrollY - 9200) / 200
-                        let trans = (9400 - scrollY ) / 4;
-
-                        $('.t-demon2').css("transform", `translateY(${trans}px)`)
-                                        .css("opacity",opa);
-                    }
-
-
-                    // ----------------shoes-demon--------------- //
-
-
-
-                    const shoesvisual = $('.shoes-visual1');
-                    if(scrollY => shoesvisual.offset().top){
-                        let linevalue = parseInt(scrollY+ $(window).innerHeight()*0.7 -shoesvisual.offset().top);
-                        linevalue > shoesvisual.innerHeight()*2/3 ? linevalue = shoesvisual.innerHeight()*2/3 : linevalue = linevalue;
-                        $('.v-line').css("height",`${linevalue}px`)
-                    }
-                         
-                    let ratio = (scrollY + $(window).innerHeight()*0.7 - shoesvisual.offset().top) / shoesvisual.innerHeight()
-                    if(ratio >= 0.33 ){
-                        $('.h-line1').css("width","100%")
-                        $('.star1').css("opacity",1)
-                    }else {
-                        $('.h-line1').css("width","0%")
-                        $('.star1').css("opacity",0)
-                    }
-                    if(ratio >= 0.66 ){
-                        $('.h-line2').css("width","100%")
-                        $('.star2').css("opacity",1)
-                    }else {
-                        $('.h-line2').css("width","0%")
-                        $('.star2').css("opacity",0)
-                    }
-                    if($(window).innerWidth() <= 768) {
-                    tshirtAnimateM()
-                    }else{
-                    tshirtAnimate()
-                    }
-                    
-            })
-            
-            
-//  ------------------------ path-scroll ----------------------------//
-                let [
-                    figureContent,figurePath,figurePathLength,
-                    figure2Content,figure2Path,figure2PathLength,
-                    tshirtContent,tshirtPath,tshirtPathLength,
-                    tshirt2Content,tshirt2Path,tshirt2PathLength,
-                    shoesContent,shoesPath,shoesPathLength,
-                    shoes2Content,shoes2Path,shoes2PathLength,
-                    posterContent,posterPath,posterPathLength,
-                    poster2Content,poster2Path,poster2PathLength,
-                    etcContent,etcPath,etcPathLength,
-                    etc1Content,etc1Path,etc1PathLength,
-                    etc2Content,etc2Path,etc2PathLength,
-                    etc3Content,etc3Path,etc3PathLength,
-                    snsContent,snsPath,snsPathLength,
-                    membershipContent,membershipPath,memberPathLength,
-                ] = [];
-                
-                
-
-                let elements = ["figure","figure2","tshirt","tshirt2","shoes","shoes2","poster","poster2","etc","etc1","etc2","etc3","sns","membership"];
-                elements.forEach((a)=>{
-                 eval(`${a}`  + "Content" + `= document.querySelector(".${a}-content")`);       
-                 eval(`${a}`  + "Path" + `= document.querySelector(".${a}-path")`);       
-                 eval(`${a}`  + "PathLength" + `= ${a}Path.getTotalLength()`);       
-                 eval(`${a}`  + "Path.style.strokeDasharray" + `= ${a}PathLength + ' ' + ${a}PathLength`);       
-                })
-
-                    
-                    function calcDashoffset(scrollY, element, length) {
-                        const ratio = (scrollY - element.offsetTop) / element.offsetHeight
-                        const value = length - (length * ratio*2) //ratio*a >> a=속도조절//
-                        return value < 0 ? 0 : value > length ? length : value
-                     }
-
-                    function scrollHandler() {
-                        const scrollY = window.scrollY + (window.innerHeight * 0.4) //window.innerHeight * a >> a=등장할위치조절 ex)a=0.4 -> 40퍼쯤내렸을때 등장//
-                            figurePath.style.strokeDashoffset = calcDashoffset(scrollY, figureContent, figurePathLength)
-                            figure2Path.style.strokeDashoffset = calcDashoffset(scrollY, figure2Content, figure2PathLength)
-                            tshirtPath.style.strokeDashoffset = calcDashoffset(scrollY, tshirtContent, tshirtPathLength)
-                            tshirt2Path.style.strokeDashoffset = calcDashoffset(scrollY, tshirt2Content, tshirt2PathLength)
-                            shoesPath.style.strokeDashoffset = calcDashoffset(scrollY, shoesContent, shoesPathLength)
-                            shoes2Path.style.strokeDashoffset = calcDashoffset(scrollY, shoes2Content, shoes2PathLength)
-                            posterPath.style.strokeDashoffset = calcDashoffset(scrollY, posterContent, posterPathLength)
-                            poster2Path.style.strokeDashoffset = calcDashoffset(scrollY, poster2Content, poster2PathLength)
-                            etcPath.style.strokeDashoffset = calcDashoffset(scrollY, etcContent, etcPathLength)                        
-                            etc1Path.style.strokeDashoffset = calcDashoffset(scrollY, etc1Content, etc1PathLength)                        
-                            etc2Path.style.strokeDashoffset = calcDashoffset(scrollY, etc2Content, etc2PathLength)                        
-                            etc3Path.style.strokeDashoffset = calcDashoffset(scrollY, etc3Content, etc3PathLength)                        
-
-                        // console.log((window.scrollY + window.innerHeight - content1.offsetTop )/ content1.offsetHeight);
-                    }
-
-                    function calcDashoffset2(scrollY, element, length) {
-                        const ratio = (scrollY - element.offsetTop) / element.offsetHeight
-                        const value = length - (length * ratio*3) //ratio*a >> a=속도조절//
-                        return value < 0 ? 0 : value > length ? length : value
-                     }
-
-                    function scrollHandler2() {
-                        const scrollY = window.scrollY + (window.innerHeight * 0.1) //window.innerHeight * a >> a=등장할위치조절 ex)a=0.4 -> 40퍼쯤내렸을때 등장//
-                        snsPath.style.strokeDashoffset = calcDashoffset2(scrollY, snsContent, snsPathLength)
-                      }
-
-                      function scrollHandler3() {
-                        const scrollY = window.scrollY + (window.innerHeight * 0.4) //window.innerHeight * a >> a=등장할위치조절 ex)a=0.4 -> 40퍼쯤내렸을때 등장//
-                        membershipPath.style.strokeDashoffset = calcDashoffset2(scrollY, membershipContent, membershipPathLength)
-                      }
-                    
-                
-
-                    window.addEventListener('scroll', scrollHandler);
-                    window.addEventListener('scroll', scrollHandler2);
-                    window.addEventListener('scroll', scrollHandler3);
-               
-
-   //------------------observer-------------------//
-
-        let observerBT = new IntersectionObserver((e)=>{
-            e.forEach((a)=>{
-                if(a.isIntersecting){
-                        a.target.style.opacity = 1;
-                        a.target.style.transform = "translateY(0px)"
-                } else {
-                        a.target.style.opacity = 0;
-                        a.target.style.transform = "translateY(100px)"
-                }
-            })
-        })
-        let observerLR = new IntersectionObserver((e)=>{
-            e.forEach((a)=>{
-                if(a.isIntersecting){
-                        a.target.style.opacity = 1;
-                        a.target.style.left = "-100px"
-                } else{
-                        a.target.style.opacity = 0;
-                        a.target.style.left = "-190px"
-                }
-            })
-        })
-        let observerRL = new IntersectionObserver((e)=>{
-            e.forEach((a)=>{
-                if(a.isIntersecting){
-                        a.target.style.opacity = 1;
-                        a.target.style.transform = "translateX(0px)"
-                     
-                } else{
-                        a.target.style.opacity = 0;
-                        a.target.style.transform = "translateX(100px)"
-                }
-            })
-        })
-        let observerLR2 = new IntersectionObserver((e)=>{
-            e.forEach((a)=>{
-                if(a.isIntersecting){
-                        a.target.style.opacity = 1;
-                        a.target.style.transform = "translateX(0px)"
-                } else{
-                        a.target.style.opacity = 0;
-                        a.target.style.transform = "translateX(-100px)"
-                }
-            })
-        })
-        let [TB1,TB2] = [0,0];
-        
-        let observerTB = new IntersectionObserver((e)=>{
-            let delaytime = 0;
-            e.forEach((a)=>{
-                
-                if(a.isIntersecting){  
-                    clearTimeout(TB2);
-                        TB1 = setTimeout(()=>{
-                            a.target.style.opacity = 1;
-                            a.target.style.transform = "translateY(0px)"
-                        },delaytime);
-                        delaytime = delaytime + 200;  
-                        
-                } 
-                // else{
-                //         a.target.style.opacity = 0;
-                //         a.target.style.transform = "translateY(-100px)"
-                // }
-            })
-         
-        })
-
-        let observerTB2 = new IntersectionObserver((e)=>{
-            let delaytime = 0;
-            e.forEach((a)=>{
-                
-                if(a.isIntersecting){         
-  
-                } else{
-                    clearTimeout(TB1);
-                    TB2 = setTimeout(()=>{
-                            a.target.style.opacity = 0;
-                        a.target.style.transform = "translateY(-100px)"
-                        },delaytime);
-                        delaytime = delaytime + 200;  
-                        
-                }
-            })
-           
-        })
-
-        
-        let bottomTotop = [
-            ".figure-demon h4",
-            ".figure-demon p",
-            ".shoes-demon h2",
-            ".shoes-demon p",
-            ".poster-demon h4",
-            ".poster-demon p",
-            ".sns-demon h4",
-            ".sns-demon p"
-        ]
-
-        let topTobottom = [
-            ".poster1",    
-            ".poster2",    
-            ".poster3",    
-            ".poster4",    
-            ".poster5"     
-        ]
-        
-
-        if($(window).innerWidth() < 768){
-                topTobottom = [];
-                $(window).scroll(()=>{
-                    console.log($('.poster1').innerHeight())
-                    let posterRatio = ($(window).scrollTop() - $('.poster-box').offset().top)/$('.poster-box').innerHeight();
-                    console.log(posterRatio)
-                    for(i=1; i<5; i++){
-                        $('.poster'+i).css("opacity",1-(posterRatio-(0.2*i-0.18))*50);
-                        let pscale = 1-(posterRatio-(0.2*i-0.18))*3
-                        pscale > 1 ? pscale = 1 : pscale = pscale;
-                        pscale < 0.8 ? pscale = 0.8 : pscale = pscale;
-                        $('.poster'+i).css("transform",`translateY(0px) scale(${pscale})`);
-                    }
-                    
-                    
-                })
-                
-            }
-            
-        
-
-        let leftToright = [
-            ".t-slogan"
-        ]
-
-        let leftToright2 = [
-            ".etc-demon2 h2",
-            ".etc-demon2 p",
-            ".shoes-box1 .shoes-imgbox",     
-            ".shoes-box3 .shoes-imgbox",
-            ".shoes-box1 h4",
-            ".shoes-box1 p",
-            ".shoes-box3 h4",
-            ".shoes-box3 p",
-            ".shoes-box5 h4",
-            ".shoes-box5 p"     
-        ]
-
-        let rightToleft = [
-            ".etc-demon1 h2",
-            ".etc-demon1 p",
-            ".etc-demon3 h2",
-            ".etc-demon3 p",
-            ".shoes-box2 .shoes-imgbox",
-            ".shoes-box4 .shoes-imgbox",
-            ".shoes-box2 h4",
-            ".shoes-box2 p",
-            ".shoes-box4 h4",
-            ".shoes-box4 p",
-            ".shoes-box5 .shoes-imgbox" 
-        ]
-
-
-        let ob = [
-            [observerBT,bottomTotop],
-            [observerLR,leftToright],
-            [observerRL,rightToleft],
-            [observerLR2,leftToright2],
-            [observerTB,topTobottom]
-        ]
-
-        let ob2 = [
-            [observerBT,bottomTotop],
-            [observerLR,leftToright],
-            [observerRL,rightToleft],
-            [observerLR2,leftToright2],
-            [observerTB2,topTobottom]
-        ]
-
-    
-        function obf1(){
-            ob.forEach((a)=>{
-            a[1].forEach((e)=>{
-            a[0].observe(document.querySelector(`${e}`)) 
-
-        })
-        })
-        return;
-        }
-            
-          
-        function obf2(){
-            ob2.forEach((a)=>{
-            a[1].forEach((e)=>{
-            a[0].observe(document.querySelector(`${e}`)) 
-
-        })
-        })
-        return;
-        }
-            
-        </script>
-    </container>
-
-    <scpript>
-
-    </scpript>
-</div>
+            </footer>
+        </container>
+    </div>
 </body>
 </html>

@@ -7,6 +7,10 @@ body,html {
     font-size: 15px;
 }
 
+body {
+    overflow: hidden;
+}
+
 /* ------------basic reset---------- */
 
 p {
@@ -32,6 +36,46 @@ img {
 /* smooth scrolling */
 html {scroll-behavior: smooth;}
 
+.loading-page {
+    position: fixed;
+    z-index: 9999999999999999999999;
+    width: auto;
+    height: auto;
+    transition: ease-out 1s;
+ ;
+}
+
+.bg-wrap {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url(../img/loading-img.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000;
+    overflow: hidden;
+    right: 0;
+    transition: .5s ease-out;
+}
+
+.loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 5rem;
+    color: #fff;
+    padding: 20px;
+}
+
+.dark-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    mix-blend-mode: color;
+    background-color: #fff;
+    transform-origin: right;
+}
 
 /* ------------Header---------- */
 header {
@@ -1267,7 +1311,9 @@ footer a{
     .t-shirt-visual {
         height: 700px;
     }
-
+    .t-demon1{
+        margin-top: 70px;
+    }
     .t-demon2 {
         width: 90%;
     }
