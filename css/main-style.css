@@ -1240,32 +1240,7 @@ footer a{
 
     
 
-    .ta1{
-        transform-style: preserve-3d;
-        transform:  rotateY(72deg) translateZ(200px);
-        backface-visibility: hidden;
-    }
-    .ta2{
-        transform-style: preserve-3d;
-        transform: rotateY(144deg) translateZ(200px);
-        backface-visibility: hidden;
-    }
-    .ta3{
-        transform-style: preserve-3d;
-        transform: rotateY(216deg) translateZ(200px);
-        backface-visibility: hidden;
-    }
-    .ta4{
-        transform-style: preserve-3d;
-        transform: rotateY(288deg) translateZ(200px);
-        backface-visibility: hidden;
-    }
-    .ta5{
-        transform-style: preserve-3d;
-        transform: rotateY(360deg) translateZ(200px);
-        backface-visibility: hidden;
-    }
-
+   
     
     @keyframes rotate {
         0%{
@@ -1278,30 +1253,16 @@ footer a{
     }
 
    
-    .tbb1{
+    .taa{
         transform-style: preserve-3d;
-        transform:  rotateY(72deg) translateZ(200px);
-    }
-    .tbb2{
-        transform-style: preserve-3d;
-        transform: rotateY(144deg) translateZ(200px);
-    }
-    .tbb3{
-        transform-style: preserve-3d;
-        transform: rotateY(216deg) translateZ(200px);
-    }
-    .tbb4{
-        transform-style: preserve-3d;
-        transform: rotateY(288deg) translateZ(200px);
-    }
-    .tbb5{
-        transform-style: preserve-3d;
-        transform: rotateY(360deg) translateZ(200px);
+        transform:  rotateY(calc(var(--num) * 72deg)) translateZ(200px);
+        backface-visibility: hidden;
     }
 
-
-
-    
+    .tbb{
+        transform-style: preserve-3d;
+        transform:  rotateY(calc(var(--num) * 72deg)) translateZ(200px);
+    }
    
     .t-shirt-visual {
         height: 700px;
